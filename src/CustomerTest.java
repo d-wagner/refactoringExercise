@@ -1,7 +1,5 @@
 import org.junit.Before;
-import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
 
 import static org.junit.Assert.*;
 
@@ -40,12 +38,12 @@ public class CustomerTest {
 
     @Test
     public void amountFor() throws Exception {
-        assertEquals(new Double(36.5),new Double(testCustomer.amountFor(testRental)));
-        assertEquals(new Double(1.5),new Double(testCustomer.amountFor(new Rental(new Movie("asdf",Movie.CHILDRENS),1))));
-        assertEquals(new Double(27.0),new Double(testCustomer.amountFor(new Rental(new Movie("asdf",Movie.CHILDRENS),20))));
-        assertEquals(new Double(3),new Double(testCustomer.amountFor(new Rental(new Movie("asdf",Movie.NEW_RELEASE),1))));
-        assertEquals(new Double(60),new Double(testCustomer.amountFor(new Rental(new Movie("asdf",Movie.NEW_RELEASE),20))));
-        assertEquals(new Double(2.0),new Double(testCustomer.amountFor(new Rental(new Movie("asdf",Movie.REGULAR),1))));
+        assertEquals(new Double(36.5),new Double(testRental.getCharge()));
+        assertEquals(new Double(1.5),new Double(new Rental(new Movie("asdf",Movie.CHILDRENS),1).getCharge()));
+        assertEquals(new Double(27.0),new Double(new Rental(new Movie("asdf",Movie.CHILDRENS),20).getCharge()));
+        assertEquals(new Double(3),new Double(new Rental(new Movie("asdf",Movie.NEW_RELEASE),1).getCharge()));
+        assertEquals(new Double(60),new Double(new Rental(new Movie("asdf",Movie.NEW_RELEASE),20).getCharge()));
+        assertEquals(new Double(2.0),new Double(new Rental(new Movie("asdf",Movie.REGULAR),1).getCharge()));
 
     }
 
