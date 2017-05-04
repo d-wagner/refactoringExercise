@@ -7,9 +7,9 @@ import static org.junit.Assert.*;
  * Created by D065058 on 04.05.2017.
  */
 public class CustomerTest {
-    Customer testCustomer;
-    Rental testRental;
-    Movie testMovie;
+    private Customer testCustomer;
+    private Rental testRental;
+    private Movie testMovie;
 
     @Before
     public void setUp() throws Exception {

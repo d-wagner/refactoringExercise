@@ -1,6 +1,6 @@
-public class Rental {
-    private Movie movie;
-    private int daysRented;
+class Rental {
+    private final Movie movie;
+    private final int daysRented;
 
     public Rental(Movie newmovie, int newdaysRented) {
         movie = newmovie;

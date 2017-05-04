@@ -1,4 +1,3 @@
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,8 +8,8 @@ import static org.junit.Assert.*;
  */
 public class RentalTest {
 
-    Rental testRental;
-    Movie testMovie;
+    private Rental testRental;
+    private Movie testMovie;
 
     @Before
     public void setUp() throws Exception {
