@@ -5,9 +5,9 @@ package de.dwagner.test;
  */
 abstract class Price {
 
-    abstract int getPriceCode();
+    public abstract int getPriceCode();
 
-    abstract double getCharge(int daysRented);
+    public abstract double getCharge(int daysRented);
 
     public int getFrequentRenterPoints(int daysRented){
         return 1;
@@ -18,7 +18,7 @@ abstract class Price {
 class ChildrensPrice extends Price{
 
     @Override
-    int getPriceCode() {
+    public int getPriceCode() {
         return Movie.CHILDRENS;
     }
 
@@ -34,7 +34,7 @@ class ChildrensPrice extends Price{
 class RegularPrice extends Price{
 
     @Override
-    int getPriceCode() {
+    public int getPriceCode() {
         return Movie.REGULAR;
     }
 
@@ -49,7 +49,7 @@ class RegularPrice extends Price{
 class NewPrice extends Price{
 
     @Override
-    int getPriceCode() {
+    public int getPriceCode() {
         return Movie.NEW_RELEASE;
     }
 
