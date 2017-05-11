@@ -1,3 +1,5 @@
+package de.dwagner.test;
+
 import org.junit.Before;
 import org.junit.Test;
 

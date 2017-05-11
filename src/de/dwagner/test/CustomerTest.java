@@ -1,3 +1,5 @@
+package de.dwagner.test;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -32,7 +34,7 @@ public class CustomerTest {
     @Test
     public void statement() throws Exception {
         testCustomer.addRental(testRental);
-        assertTrue(testCustomer.statement().contains("Rental Record for testCustomer")&&
+        assertTrue(testCustomer.statement().contains("de.dwagner.test.Rental Record for testCustomer")&&
         testCustomer.statement().contains("testMovie\t\t25"));
     }
 

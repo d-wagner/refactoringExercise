@@ -1,3 +1,5 @@
+package de.dwagner.test;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +15,7 @@ public class RentalTest {
 
     @Before
     public void setUp() throws Exception {
-        testMovie = new Movie("my Movie",Movie.REGULAR);
+        testMovie = new Movie("my de.dwagner.test.Movie",Movie.REGULAR);
         testRental = new Rental(testMovie,25);
     }
 
