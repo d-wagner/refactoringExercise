@@ -1,6 +1,5 @@
 package de.dwagner.test;
 
-import java.lang.*;
 import java.util.*;
 
 class Customer {
